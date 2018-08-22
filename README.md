@@ -6,6 +6,16 @@
 
 本文档，对ITE3的具体实现，做一个更详细的介绍。
 
+## ITE3 相关信息
+
+* 官网: [http://ite.zone](http://ite.zone)
+* 合约账号: [iteecosystem](https://eosflare.io/account/iteecosystem)
+* 权限移交: [iteecosystem](https://eospark.com/MainNet/Account/iteecosystem)
+* 哈希认证: [iteecosystem](https://eospark.com/MainNet/contract/iteecosystem)
+* 源代码: [github](https://github.com/ITE-Organization/ite3)
+* 交流群:  [discordapp](https://discord.gg/er4JYRP)
+* 邮件:  [itesourcecode@163.com](itesourcecode@163.com)
+
 ## 项目定位
 
 ITE3的项目定位，是一个股权销售系统和分红系统。目的在于把 ITE 这个去中心化公司的权益，通过公平的Token规则，分享给每一位投资者。
@@ -167,38 +177,23 @@ ITE3 作为需要长期持有才能最大化收益的投资型项目。 不存�
 在和热心网友的建议和讨论下，我们发现盘子过大，进基金池的比例过大，会让整个盘子失去活力。所以需要对数值作出调整。最终确定下了以下的数值：
 
 ITE token 总发行量： 500 万
-
 初始发行价： 0.1 EOS / ITE
-
 买入时进入基金池的比例：  10%
-
 每周分红，分红总额占基金池的比例：  10%
-
 
 在此新的数值模型下，我们做一个简单的推演：
 
 3万EOS进场， 10%涨幅 0.11 EOS / ITE
-
 6万EOS进场， 20%涨幅 0.12 EOS / ITE
-
 8万EOS进场， 30%涨幅 0.13 EOS / ITE
-
 10万EOS进场，40%涨幅 0.14 EOS / ITE
-
 13万EOS进场，50%涨幅 0.15 EOS / ITE
-
 23万EOS进场，100% 涨幅 0.2 EOS / ITE
-
 41万EOS进场，200% 涨幅 0.3 EOS / ITE
-
 100万EOS进场，780% 涨幅 0.78 EOS / ITE
-
 200万EOS进场，2100% 涨幅 2.1 EOS / ITE
-
 ...
-
 ...
-
 630万EOS进场，15100% 涨幅 15.1 EOS / ITE
 
 进场时10%进基金池，同时保留多次超过10% 收益的机会。
