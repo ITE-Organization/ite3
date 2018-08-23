@@ -55,7 +55,7 @@ public:
 
   const uint64_t action_limit_time = 15;       // 操作冷却时间(s)
   const uint64_t max_operate_amount_ratio = 1; // 单笔可以买入的token数量
-  const uint64_t game_start_time = 1535025600; // 项目启动时间 2018-08-12 15:00:00
+  const uint64_t game_start_time = 1535025600; // 项目启动时间 2018-08-23 20:00:00
 
   const uint64_t eco_fund_ratio = 10; // 每一笔投资，直接转入到 生态基金池 的比例
 
@@ -68,7 +68,7 @@ public:
   const uint64_t token_price_decrease_limit = 15;     // 最大跌幅，达到最大跌幅，暂时限制卖出
 
   const uint64_t max_holding_lock = 15; // token总销售数 达到这个比例时。解锁个人持仓限制。
-  const uint64_t first_sell_lock_ = 15; // token总出售数 达到这个比例之前。解锁token卖出限制。可以开始出售token。
+  const uint64_t first_sell_lock_ = 15; // token总出售数 达到这个比例之前。解锁token卖出限制。可以开始出售token。(未启用)
 
   ite3(account_name self)
       : contract(self),
