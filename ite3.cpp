@@ -68,7 +68,7 @@ public:
   const uint64_t token_price_decrease_limit = 15;     // 最大跌幅，达到最大跌幅，暂时限制卖出
 
   const uint64_t max_holding_lock = 15; // token总销售数 达到这个比例时。解锁个人持仓限制。
-  const uint64_t first_sell_lock_ = 15; // token总出售数 达到这个比例之前。解锁token卖出限制。可以开始出售token。(未启用)
+  const uint64_t first_sell_lock_ = 15; // token总出售数 达到这个比例之前。解锁token卖出限制。可以开始出售token。（未启用）
 
   ite3(account_name self)
       : contract(self),
@@ -124,6 +124,7 @@ public:
         res.staked_time = now() + pos_min_staked_time;
       });
     }
+    
   }
 
   void transfer(account_name from, account_name to, asset quantity, string memo)
@@ -294,7 +295,7 @@ public:
       }
 
       userres.modify(res_itr, account, [&](auto &res) {
-        res.hodl += ite_out;
+        res.hodl += ite_out_after_share;
         res.last_action_time = now();
         res.staked_time = now() + pos_min_staked_time;
         res.action_count++;
@@ -765,3 +766,5 @@ private:
   }
 
 EOSIO_ABI_PRO(ite3, (transfer)(sell)(claim))
+
+// EOSIO_ABI(ite3, (transfer)(sell)(claim))
